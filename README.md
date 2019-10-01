@@ -11,7 +11,7 @@
 
 ## Template Portafolio
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aLoNsolml/mat281_template_portfolio/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aLoNsolml/mat281_portfolio_template/master?urlpath=lab)
 
 * __John Titor__ : [](https://www.linkedin.com/in/williamhgates/)
 
