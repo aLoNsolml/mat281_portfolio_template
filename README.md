@@ -14,7 +14,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aLoNsolml/mat281_portfolio_template/master?urlpath=lab)
 
-* __John Titor__ : [](https://www.linkedin.com/in/williamhgates/)
+* __John Titor__ : [Linkedin](https://www.linkedin.com/in/williamhgates/)
 
 * __Repositorio Curso__: [GitHub](https://github.com/aLoNsolml/mat281_2019S2)
 
@@ -23,7 +23,7 @@
 
 Recopilación de laboratorios, tareas y proyectos de la asignatura MAT281 correspondiente al segundo semestre del año 2019.
 
-Es posible ejecutar y explorar interactivamente los jupyter notebooks de este repositorio clickeando en el icono _launch binder_ que se encuentra bajo el título. Esperar hasta que se abra una instancia de JupyterLab.
+Es posible ejecutar y explorar interactivamente los jupyter notebooks de este repositorio clickeando en el icono  ![Binder](https://mybinder.org/badge_logo.svg) que se encuentra bajo el título. Esperar hasta que se abra una instancia de JupyterLab.
 
 
 ## Instrucciones de configuración inicial para el curso
@@ -41,5 +41,6 @@ Es posible ejecutar y explorar interactivamente los jupyter notebooks de este re
 6. Clonar el repositorio recién creado. Dependiendo de tu configuración de Git, reemplazar `{username}` por el nombre de usuario personal de GitHub uno de los siguientes comandos en la terminal (usuarios de Windows probablemente tengan que utilizar _Git Shell_.)
     - HTTPS: `git clone https://github.com/{username}/mat281_portfolio.git`
     - SSH: `git clone git@github.com:{username}/mat281_portfolio.git`
-
-test line
+7. En el archivo `README.md` editar los campos personales:
+    - Línea 15: `[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/{GITHUT_USER}/{REPO_NAME}/master?urlpath=lab)` donde deber cambiar `{GITHUB_USER}` por tu usuario de GitHub y `{REPO_NAME}` por el nombre del repositorio, que siguiendo las instrucciones debe llamarse __mat281_porfolio__.
+    - Línea 17: Nombre personal y si se desea algún link a perfil profesional, por ejemplo Linkedin o GitHub.
