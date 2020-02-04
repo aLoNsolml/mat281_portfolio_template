@@ -75,3 +75,47 @@ En tu repositorio debes crear el directorio del módulo y de la clase, copiar y 
     git push origin master
     ```
     Con esto se verán reflejados los cambios en tu cuenta de GitHub.
+
+## Verifica que todo funcione correctamente!
+
+Después de cada _commit_, prueba que Binder está bien configurado, ya que Binder necesita realizar una nueva imagen/contenedor de tu repositorio. Además, durante el curso se han instalado librerías o actualizado otras, por lo que debes editar el archivo `environment.yml` de tu respostorio.
+
+Ejemplo:
+
+- _Pusheaste_ la tarea del módulo de análisis datos (`m02_homework`)
+- Vas a tu repositorio y ejecutas Binder haciendo click en el icono de Binder configurado anteriormente.
+- Se va a tardar un par de minutos en crear la nueva imagen y lanzar la instancia de Jupyter Lab (__NO__ Jupyter Notebook!).
+- Al estar lista la instancia de Jupyter Lab, abre el notebook `m02_homework.ipynb` que debe estar en la carpeta `m02_data_analysis/m02_homework`.
+- Haz click en `Kernel -> Restart Kernel and Run All Cells`.
+- Si al ejecutar `from PIL import Image` te arroja el error `ModuleNotFoundError: No module named 'PIL'` es porque no agregaste `pillow` a tu archivo `environment.yml`
+    * Recuerda que las librerías instaladas en tu computador personal no se traspasan mágicamente a la instancia de Binder en tu repositorio, debes especificar las librerías en el famoso archivo `environment.yml`.
+- En el caso que se te presente el caso anterior debes agregar la dependencia `pillow` y `environment.yml` te quedaría __algo__ como esto:
+
+```yml
+name: mat281
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - altair=3
+  - jupyterlab=1.0.9
+  - matplotlib=3.1.1
+  - nodejs=12.8
+  - numpy=1.17.0
+  - pandas=0.25.1
+  - pandas-profiling=2.3.0
+  - pip
+  - pillow=6.2.1
+  - python=3.7
+  - scikit-learn=0.21.3
+  - scipy=1.3.1
+  - seaborn=0.9.0
+  - pip:
+    - datachile
+```
+
+- Luego vuelves a hacer un _push_ con este cambio.
+- Levantas la instancia de Binder en tu repostorio y vuelves a probar a ejectuar todas las celdas de `m02_homework.ipynb`.
+- Repite el proceso hasta que todos tus entregables no tengan problema.
+
+Finalmente, recuerda que la estructura de las carpetas es importante, así como los archivos que están en tu repositorio. Mostrar orden y pulcridad demuestra profesionalismo y seriedad. Recuerden que este repositorio será su carta de presentación el día de mañana.
